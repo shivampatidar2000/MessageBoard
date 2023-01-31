@@ -1,0 +1,17 @@
+<%= simple_form_for  @message do |form| %>
+
+<div>
+  <%= form.input :title, label: "Comment" %>
+
+</div>
+
+<div>
+   <%= form.input :description, label: "Comment" %>
+
+</div>
+
+<div>
+  <%= form.button :submit %>
+</div>
+
+<% end %>
