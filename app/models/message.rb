@@ -1,4 +1,5 @@
 class Message < ApplicationRecord
-    belongs_to :user 
-    has_many :comments , dependent: :destroy
+ self.table_name = :messages
+    belongs_to :user , dependent: :destroy
+    has_many :comments, dependent: :destroy
 end

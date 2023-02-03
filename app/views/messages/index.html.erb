@@ -1,13 +1,15 @@
-<h1>This is index file </h1>
 
 <% @message.each do |form|%>
 
-<b>Title: </b><%= form.title %><br>
-<%# <b>Description:</b> <%= form.description %><br>
-<%= link_to "View Message", message_path(form), class:"btn btn-primary" %><br>
-<%# <%= link_to "edit", edit_message_path(form)%><br> 
+<div class = "col-md-4">
+<div class = "message">
+    <h2 class= "message-title"> <%= form.title %><br></h2>
+    <%= link_to "View Message", message_path(form), class:"btn-custom" %><br>
+</div>
+</div>
+
 <% end %>
 
-<br>
+
 
 <%# <%= link_to "New Message", new_message_path,class: %>

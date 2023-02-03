@@ -1,5 +1,7 @@
 class Comment < ApplicationRecord
-  belongs_to :message
+ self.table_name = :comments
+
+  belongs_to :message  ,class_name: 'Message'
   belongs_to :user
   # validates :content, presence: true
 end

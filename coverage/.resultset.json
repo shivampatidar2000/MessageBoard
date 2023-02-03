@@ -1,0 +1,174 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/rails/Desktop/mimi/MessageBoard/app/models/user.rb": [
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        0,
+        0
+      ],
+      "/home/rails/Desktop/mimi/MessageBoard/app/models/comment.rb": [
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0
+      ],
+      "/home/rails/Desktop/mimi/MessageBoard/app/models/message.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/rails/Desktop/mimi/MessageBoard/app/models/application_record.rb": [
+        0,
+        0,
+        0
+      ],
+      "/home/rails/Desktop/mimi/MessageBoard/app/helpers/comments_helper.rb": [
+        0,
+        0
+      ],
+      "/home/rails/Desktop/mimi/MessageBoard/app/helpers/application_helper.rb": [
+        0,
+        0
+      ],
+      "/home/rails/Desktop/mimi/MessageBoard/app/helpers/messages_helper.rb": [
+        0,
+        0
+      ],
+      "/home/rails/Desktop/mimi/MessageBoard/app/jobs/application_job.rb": [
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0
+      ],
+      "/home/rails/Desktop/mimi/MessageBoard/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/rails/Desktop/mimi/MessageBoard/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/rails/Desktop/mimi/MessageBoard/app/controllers/messages_controller.rb": [
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/rails/Desktop/mimi/MessageBoard/app/controllers/comments_controller.rb": [
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0
+      ],
+      "/home/rails/Desktop/mimi/MessageBoard/app/controllers/application_controller.rb": [
+        0,
+        0
+      ],
+      "/home/rails/Desktop/mimi/MessageBoard/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1675243695
+  }
+}

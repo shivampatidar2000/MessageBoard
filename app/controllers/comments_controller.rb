@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
 
     before_action :find_message
-    before_action :find_comment, only: [:edit,:update,:destroy]
+    before_action :find_comment, only: [:show,:edit,:update,:destroy]
  before_action :authenticate_user!
     def create
         @comment = @message.comments.create(comment_params)
@@ -16,6 +16,8 @@ class CommentsController < ApplicationController
    
     def edit
     end
+    def show
+    end
     def update
         if @comment.update(comment_params)
             redirect_to message_path(@message)
@@ -25,7 +27,7 @@ class CommentsController < ApplicationController
     end
     def destroy
         @comment.destroy
-        redirect_to message_path(@message)
+        redirect_to message_path(@comment)
     end
     private
 
