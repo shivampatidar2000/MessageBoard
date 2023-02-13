@@ -1,0 +1,19 @@
+
+<%# <%= render "form"%> %>
+
+<%= form_with(model:@post, local: true) do |f| %>
+ 
+ <div>
+ <%= f.label :image %>
+ <%= f.file_field :image %>
+ </div>
+ <br>
+ <div>
+ <%= f.label :video %>
+ <%= f.file_field :video %>
+ </div> 
+ <br>
+<div>
+  <%= f.submit %>
+</div>
+<% end %>

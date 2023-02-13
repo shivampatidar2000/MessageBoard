@@ -2,6 +2,7 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  Rails.application.routes.default_url_options[:host] = 'localhost:3000'
 
   # In the development environment your application's code is reloaded any time
   # it changes. This slows down response time but is perfect for development
@@ -32,6 +33,8 @@ Rails.application.configure do
 
     config.cache_store = :null_store
   end
+  # config.serve_static_assets = true
+  config.assets.compile = true
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local

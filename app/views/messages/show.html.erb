@@ -3,12 +3,33 @@
 
 <strong>Description:</strong> <%=@message.description %><br>
 
+<<<<<<< HEAD
 <br>
 <h3>Comments</h3>
 <%= render @message.comments%>
 
 <h2>Reply To Messages: </h2>
 <%= render "comments/form"%><br>
+=======
+    <br>
+    <h3>Comments</h3>
+    <%= render @message.comments%>
+   
+   <%= render "likes/form"%>
+    <h2 class= "reply-to-msg">Reply To Messages: </h2>
+    <%= render "comments/form"%><br>
+    <div class= "link btn-group">
+      <%= link_to "Back",root_path, class: "btn btn-default"%>
+      <% if user_signed_in? %>
+        <% if @message.user_id == current_user.id %>
+          <%= link_to "Edit", edit_message_path(@message), class: "btn btn-default"%>
+          <%= button_to "Delete",message_path(@message), method: :delete, data: { confirm:"Are you Sure?" }, class: "btn btn-default" %>
+          <%= link_to "show", post_path(@message), class: "btn btn-default"%>
+       
+        <% end %>
+      <% end %>
+    </div>
+>>>>>>> 5b376bc... commit for the reposertry
 
 <%= link_to "Back",root_path%>
 <% if user_signed_in? %>

@@ -1,0 +1,6 @@
+class PostsController < MessagesController
+  
+    
+
+  
+end

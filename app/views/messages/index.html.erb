@@ -1,7 +1,9 @@
 <h1>This is index file </h1>
 
+
 <% @message.each do |form|%>
 
+<<<<<<< HEAD
 <b>Title: </b><%= form.title %><br>
 <%# <b>Description:</b> <%= form.description %><br>
 <%= link_to "View Message", message_path(form), class:"btn btn-primary" %><br>
@@ -10,4 +12,14 @@
 
 <br>
 
+=======
+<div class = "col-md-4">
+<div class = "message">
+    <h2 class= "message-title"> <%= form.title %><br></h2>
+    <%= link_to "View Message", message_path(form), class:"btn-custom", style:"text-decoration:none" %><br>
+</div>
+</div>
+
+<% end %>
+>>>>>>> 5b376bc... commit for the reposertry
 <%# <%= link_to "New Message", new_message_path,class: %>

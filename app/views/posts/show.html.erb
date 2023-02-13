@@ -1,0 +1,23 @@
+
+<% if @post.image_url.present? %>
+
+Image <%= image_tag @post.image_url %><br><br>
+<%# <% if @post.video.present? %>
+  Video <%= video_tag @post.video_url.to_s, controls: true %> 
+<%# <% end %> 
+<%end%>
+
+
+
+<p><%= @post.likes.count %><%= ( @post.likes.count) == 1 ? ' Like' : ' Likes' %> </p>
+<% pre_like = @post.likes.find { |like| like.user_id == current_user.id} %>
+<% if pre_like %>
+  <%= button_to 'Unlike', post_like_path(@post, pre_like), method: :delete %>
+<% else %>
+  <%= button_to 'Like', post_likes_path(@post), method: :post %>
+<% end %>
+
+<br>
+<%= button_to "Delete",post_path(@post), method: :delete ,class: "btn btn-default" %>
+
+<%= link_to "back",posts_path ,class: "btn btn-default" %>
