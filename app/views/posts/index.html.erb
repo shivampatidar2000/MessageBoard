@@ -1,0 +1,15 @@
+
+<% @posts.each do |f| %>
+<% if f.image_url.present? || f.video.present? %>
+<%= image_tag f.image_url %>
+<%= video_tag f.video_url %>
+<% end %>
+
+
+<%# <%= button_to 'Like', post_likes_path(@post), method: :post %> 
+<p><%= f.likes.count %><%= (f.likes.count) == 1 ? 'Like' : 'Likes' %> </p>
+<%= link_to "View Post" ,post_path(f)%>
+<br>
+<br>
+<% end %><br>
+

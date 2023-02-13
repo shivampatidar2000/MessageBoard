@@ -1,15 +1,13 @@
 
+
 <% @message.each do |form|%>
 
 <div class = "col-md-4">
 <div class = "message">
     <h2 class= "message-title"> <%= form.title %><br></h2>
-    <%= link_to "View Message", message_path(form), class:"btn-custom" %><br>
+    <%= link_to "View Message", message_path(form), class:"btn-custom", style:"text-decoration:none" %><br>
 </div>
 </div>
 
 <% end %>
-
-
-
 <%# <%= link_to "New Message", new_message_path,class: %>

@@ -3,5 +3,6 @@ class Comment < ApplicationRecord
 
   belongs_to :message  ,class_name: 'Message'
   belongs_to :user
+  has_many :likes,dependent: :destroy
   # validates :content, presence: true
 end
